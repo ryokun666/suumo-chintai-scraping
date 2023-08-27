@@ -5,7 +5,7 @@ scope = ['https://spreadsheets.google.com/feeds',
          'https://www.googleapis.com/auth/drive']
 
 # ダウンロードしたjsonファイルをドライブにアップデートした際のパス
-json = './apartment-analysis-397211-65c94c00b8e1.json'
+json = './googleSeacretKey.json'
 
 credentials = ServiceAccountCredentials.from_json_keyfile_name(json, scope)
 
