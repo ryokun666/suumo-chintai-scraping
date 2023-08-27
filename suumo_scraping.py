@@ -14,9 +14,10 @@ data_samples = []
 
 # スクレイピングするページ数
 max_page = 3
-# SUUMOを東京都23区のみ指定して検索して出力した画面のurl(ページ数フォーマットが必要)
-# url = 'https://suumo.jp/jj/chintai/ichiran/FR301FC001/?ar=030&bs=040&ta=13&sc=13101&sc=13102&sc=13103&sc=13104&sc=13105&sc=13113&sc=13106&sc=13107&sc=13108&sc=13118&sc=13121&sc=13122&sc=13123&sc=13109&sc=13110&sc=13111&sc=13112&sc=13114&sc=13115&sc=13120&sc=13116&sc=13117&sc=13119&cb=0.0&ct=9999999&mb=0&mt=9999999&et=9999999&cn=9999999&shkr1=03&shkr2=03&shkr3=03&shkr4=03&sngz=&po1=25&pc=50&page={}'
-source_url = 'https://suumo.jp/jj/chintai/ichiran/FR301FC001/?ar=030&bs=040&pc=30&smk=&po1=25&po2=99&shkr1=03&shkr2=03&shkr3=03&shkr4=03&rn=0220&ek=022027580&ek=022040640&ra=013&ae=02201&cb=0.0&ct=9999999&md=07&md=08&md=09&md=10&ts=1&et=15&mb=45&mt=9999999&cn=25&tc=0401102&fw2='
+# SUUMOの検索結果を入力させる。
+print("SUUMOの検索結果のURLを入力してください！")
+source_url = input()
+# ページ数フォーマット1
 url = source_url+"&page={}"
 
 # リクエストがうまく行かないパターンを回避するためのやり直し
