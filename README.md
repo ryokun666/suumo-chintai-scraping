@@ -1,0 +1,1 @@
+# suumo-chintai-scraping
